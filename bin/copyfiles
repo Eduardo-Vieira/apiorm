@@ -4,22 +4,18 @@
  * Copy files for projetc
  * 
  */
-var fs = require('fs-extra');
+var fs = require('fs');
+var fse = require('fs-extra');
 var path = require('path');
+var files = require(__dirname + '/../config/assets.json');
 
 var modules = __dirname+'/../node_modules/';
 var assets =  __dirname+'/../public/assets/';
 
-console.log('Modules Files');
-
-// arquivo que serão copiados
-var files = [
-             {origin:'jquery/dist/jquery.min.js',dir:'jquery/jquery.min.js'},
-             {origin:'bootstrap/dist/css/bootstrap.min.css',dir:'bootstrap/bootstrap.min.css'},
-             {origin:'bootstrap/dist/js/bootstrap.min.js',dir:'bootstrap/bootstrap.min.js'},
-            ];
+console.log('Modules Files Assets');
 
 //copy files
 files.forEach(function(file){
-    fs.copySync(path.resolve(modules,file.origin), path.resolve(assets,file.dir));
+    console.log('[',file.dir,'] - OK');
+    fse.copySync(path.resolve(modules,file.origin), path.resolve(assets,file.dir));
 });
