@@ -6,13 +6,20 @@
  */
 var fs = require('fs-extra');
 var path = require('path');
-var modules = __dirname+'/node_modules/';
+
+var modules = __dirname+'/../node_modules/';
+var assets =  __dirname+'/../public/assets/';
 
 console.log('Modules Files');
 
-//Jquery
-fs.copySync(path.resolve(modules,'jquery/dist/jquery.min.js'), 'public/assets/jquery/jquery.min.js');
+// arquivo que serão copiados
+var files = [
+             {origin:'jquery/dist/jquery.min.js',dir:'jquery/jquery.min.js'},
+             {origin:'bootstrap/dist/css/bootstrap.min.css',dir:'bootstrap/bootstrap.min.css'},
+             {origin:'bootstrap/dist/js/bootstrap.min.js',dir:'bootstrap/bootstrap.min.js'},
+            ];
 
-// bootstrap
-fs.copySync(path.resolve(modules,'bootstrap/dist/css/bootstrap.min.css'), 'public/assets/bootstrap/bootstrap.min.css');
-fs.copySync(path.resolve(modules,'bootstrap/dist/js/bootstrap.min.js'),  'public/assets/bootstrap/bootstrap.min.js');
+//copy files
+files.forEach(function(file){
+    fs.copySync(path.resolve(modules,file.origin), path.resolve(assets,file.dir));
+});

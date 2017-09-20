@@ -1,2 +1,6 @@
+# dir
 /node_modules*
 /public/assets*
+
+#files
+npm-debug.log
