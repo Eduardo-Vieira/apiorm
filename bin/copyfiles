@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * Copy files for projetc
  * 
