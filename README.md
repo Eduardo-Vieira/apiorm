@@ -1,6 +1,10 @@
 # Projeto Node Express MVC
 
-Este projeto tem implementa o metodo MVC para facilitar o desenvilvimento em node express.
+Este projeto implementa o metodo MVC para facilitar o desenvilvimento em node express.
+
+* bootstrap
+* jquery
+* ejs
 
 ### Instalação de dependência
 
