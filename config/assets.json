@@ -1,11 +1,14 @@
 [
   {"origin":"jquery/dist/jquery.min.js",
-   "dir":"jquery/jquery.min.js"
+   "dir":"javascripts/jquery.min.js"
   },
   {"origin":"bootstrap/dist/css/bootstrap.min.css",
-   "dir":"bootstrap/bootstrap.min.css"
+   "dir":"stylesheets/bootstrap.min.css"
   },
+  {"origin":"bootstrap/dist/css/bootstrap.min.css.map",
+    "dir":"stylesheets/bootstrap.min.css.map"
+   },
   {"origin":"bootstrap/dist/js/bootstrap.min.js",
-   "dir":"bootstrap/bootstrap.min.js"
+   "dir":"javascripts/bootstrap.min.js"
   }
 ]

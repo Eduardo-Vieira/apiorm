@@ -10,7 +10,7 @@ var path = require('path');
 var files = require(__dirname + '/../config/assets.json');
 
 var modules = __dirname+'/../node_modules/';
-var assets =  __dirname+'/../public/assets/';
+var assets =  __dirname+'/../public/';
 
 console.log('Modules Files Assets');
 
