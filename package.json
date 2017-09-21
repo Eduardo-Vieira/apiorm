@@ -1,32 +1,38 @@
 {
-  "name": "apiorm",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/copyfiles && node ./bin/www"
-  },
-  "dependencies": {
-    "body-parser": "~1.17.1",
-    "bootstrap": "^4.0.0-beta",
-    "cookie-parser": "~1.4.3",
-    "copy": "^0.3.1",
-    "debug": "~2.6.3",
-    "ejs": "^2.5.7",
-    "express": "~4.15.2",
-    "express-ejs-extend": "0.0.1",
-    "fs-extra": "^4.0.2",
-    "gulp": "^3.9.1",
-    "gulp-csso": "^3.0.0",
-    "gulp-less": "^3.3.2",
-    "gulp-pug": "^3.3.0",
-    "jade": "~1.11.0",
-    "jquery": "^3.2.1",
-    "morgan": "~1.8.1",
-    "mysql": "^2.14.1",
-    "mysql2": "^1.4.2",
-    "popper.js": "^1.11.0",
-    "sequelize": "^4.8.4",
-    "sequelize-cli": "^3.0.0-2",
-    "serve-favicon": "~2.4.2"
-  }
+    "name": "apiorm",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "gulp && node ./bin/copyfiles && node ./bin/www"
+    },
+    "dependencies": {
+        "body-parser": "~1.17.1",
+        "bootstrap": "^4.0.0-beta",
+        "cookie-parser": "~1.4.3",
+        "copy": "^0.3.1",
+        "debug": "~2.6.3",
+        "ejs": "^2.5.7",
+        "express": "~4.15.2",
+        "express-ejs-extend": "0.0.1",
+        "fs-extra": "^4.0.2",
+        "gulp": "^3.9.1",
+        "gulp-csso": "^3.0.0",
+        "gulp-less": "^3.3.2",
+        "gulp-pug": "^3.3.0",
+        "jade": "~1.11.0",
+        "jquery": "^3.2.1",
+        "morgan": "~1.8.1",
+        "mysql": "^2.14.1",
+        "mysql2": "^1.4.2",
+        "popper.js": "^1.11.0",
+        "sequelize": "^4.8.4",
+        "sequelize-cli": "^3.0.0-2",
+        "serve-favicon": "~2.4.2"
+    },
+    "devDependencies": {
+        "gulp-concat": "^2.6.1",
+        "gulp-minify": "^1.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-uglify": "^3.0.0"
+    }
 }
